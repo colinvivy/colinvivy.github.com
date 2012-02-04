@@ -1,0 +1,55 @@
+/**
+ * common.css
+ *
+ * @author alextang<colinvivy#gmail.com>
+ * @date 2012-02-04
+ * @link   http://icolin.org/
+ */
+
+html, body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, iframe,
+dl, dt, dd, ul, ol, li, pre, 
+form, fieldset, legend, button, input, textarea, 
+th, td { margin: 0; padding: 0; }
+body, button, input, select, textarea { font: 12px/1.5 Arial, \5b8b\4f53, sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+ul, ol { list-style: none; }
+img { border: 0;display:block;} 
+table { border-collapse: collapse; border-spacing: 0; }
+
+.clear {zoom:1;}
+.clear:after {content:' ';display:block;clear:both;height:0;visibility:hidden;}
+.hidden {display:none;}
+a {color:#666;text-decoration:none;}
+a:hover {color:#d70000;text-decoration:underline;}
+a.link_strong {color:#2C53A8;text-decoration:none;}
+a.link_strong:hover {color:#D70000;text-decoration:underline;}
+
+html { overflow-y:scroll;}
+body {background-color:#fff;}
+
+/* index */
+.header {width:980px;height:72px;margin:0px auto;border-bottom:1px solid #ddd;}
+.header h1 {font:300 16px/72px "Droid sans mono",Verdana;color:#2d2d2d;}
+.footer {clear:both;width:980px;padding:10px 0px;margin:10px auto 0;border-top:1px solid #ddd;text-align:center;font:300 12px/25px verdana,Simsun;}
+
+.main {clear:both;margin:10px auto 0;width:980px;}
+
+/* home */
+.hc_post_list_item {padding-bottom:10px;line-height:23px;}
+.hc_post_list_item_hd h3 {display:inline-block;padding-right:15px;}
+.hc_post_list_item_hd .comments {display:inline-block;}
+.hc_past {clear:both;margin-top:10px;}
+
+.nav_wrap {width:980px;margin:0px auto;}
+.nav {clear:both;float:right;margin-top:-45px;}
+.nav li {float:left;margin-left:15px;font:300 14px/25px verdana,Arial,Simsun;_display:inline;}
+.nav li a:hover {text-decoration:none;}
+
+
+/* post */
+.post_cont {font-size:14px;}
+.pc_title {font:700 16px/25px "\5FAE\8F6F\96C5\9ED1",Arial,Simsun;padding-bottom:20px;border-bottom:1px solid #ddd;padding-bottom:10px;margin-bottom:10px;}
+.post_cont h4 {font:700 14px/40px "\5FAE\8F6F\96C5\9ED1",Arial,Simsun;}
+.post_cont p {padding-bottom:10px;}
+
+.cate_item {padding-bottom:10px;}

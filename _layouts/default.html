@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta name="author" content="colinvivy" />
+<title>{{ page.title }} - {{page.globalTitle}}</title>
+{% if page.keywords %}
+<meta name="keywords" content="{{ page.keywords }}">
+{% endif %}
+{% if page.feed %}
+<link rel="alternate" type="application/atom+xml" href="{{ page.feed }}" title="RSS feed" />
+{% endif %}
+<link rel="stylesheet" href="/css/common.css" type="text/css" />
+</head>
+<body id="{{ page.pagesName }}">
+
+<div class="header">
+    <h1 class=""><a href="/" target="_self">ColinVivy in Github </a></h1>
+</div>
+
+{% include nav.md %}
+
+<div class="main">
+{{ content }}
+</div>
+
+<div class="footer">
+    &copy; 2011 colinvivy.github.com.Some Rights Reserved.
+</div>
+
+</body>
+</html>
