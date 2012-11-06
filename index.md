@@ -6,7 +6,7 @@ keywords: colinvivy, github, front-end develop
 pagesName: home
 ---
 test content by github in TC
-<div class="home_cont">
+<div class="home_cont xxx">
     <div class="hc_post_list">
 
         {% for post in site.posts limit:5 %}
