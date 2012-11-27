@@ -9,7 +9,7 @@ category: Mac
 [linkQQ]: http://www.qq.com 'QQ web'
 
 #### 小标题1
-段落如何缩进呢,真是伤脑筋呢
+测试段落
 
 #### 测试链接文本
 you can visit [Google][] for more information, or you can visit [QQ][linkQQ] for more.

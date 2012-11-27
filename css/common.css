@@ -28,21 +28,27 @@ html { overflow-y:scroll;}
 body {background-color:#fff;}
 
 /* index */
-.header {width:980px;height:72px;margin:0px auto;border-bottom:1px solid #ddd;}
-.header h1 {font:300 16px/72px "Droid sans mono",Verdana;color:#2d2d2d;}
+.header {width:980px;height:90px;margin:0px auto;border-bottom:1px solid #ddd;overflow:hidden;}
 .footer {clear:both;width:980px;padding:10px 0px;margin:10px auto 0;border-top:1px solid #ddd;text-align:center;font:300 12px/25px verdana,Simsun;}
+
+.h_title {float:left;font:300 40px/90px "\5FAE\8F6F\96C5\9ED1",Verdana;color:#2d2d2d;margin-right:10px;}
+.h_sub_title {float:left;font:400 14px/90px "\5FAE\8F6F\96C5\9ED1",Arial;}
 
 .main {clear:both;margin:10px auto 0;width:980px;}
 
 /* home */
-.hc_post_list_item {padding-bottom:10px;line-height:23px;}
+.hc_post_list_item {padding-bottom:10px;line-height:23px;border-bottom:1px dotted #ccc;margin:10px 0px;}
 .hc_post_list_item_hd h3 {display:inline-block;padding-right:15px;}
 .hc_post_list_item_hd .comments {display:inline-block;}
 .hc_past {clear:both;margin-top:10px;}
 
-.nav_wrap {width:980px;margin:0px auto;}
-.nav {clear:both;float:right;margin-top:-45px;}
-.nav li {float:left;margin-left:15px;font:300 14px/25px verdana,Arial,Simsun;_display:inline;}
+.nav_wrap {clear:both;width:980px;height:90px;margin:-90px auto 0;overflow:hidden;}
+.nav {float:right;margin-right:-20px;}
+.nav li {float:left;font:300 14px/40px verdana,Arial,Simsun;_display:inline;
+    background-color:#eee;width:140px;height:40px;margin-left:-80px;
+-webkit-transform:rotate(-45deg);
+}
+.nav li a {display:block;text-indent:10px;}
 .nav li a:hover {text-decoration:none;}
 
 
