@@ -31,6 +31,57 @@
 <div class="footer">
     &copy; 2011 colinvivy.github.com.Some Rights Reserved.
 </div>
+<script type="text/javascript">
+    //easter egg
+    var Eegg = {
+        keyCodes: '' ,
 
+        trackKey: function (e) {
+            e = e || window.event ;
+            var tmpCode = e.keyCode ;
+            this.keyCodes += (tmpCode + ',') ;
+
+            if (tmpCode == 27 || tmpCode == 13) {
+                this.resetTrack();
+            }
+            //console.log(['r: ' + this.keyCodes]);
+
+            // if (this.keyCodes == '38,40,37,39,') {
+            if (this.keyCodes == '38,38,40,40,37,39,37,39,66,65,') {
+                this.show();
+                this.resetTrack();
+            }
+        },
+
+        resetTrack: function () {
+            this.keyCodes = '';
+        },
+
+        st: null ,
+
+        init: function () {
+            var _self = this ;
+            document.onkeyup = function (e) {
+                Eegg.trackKey(e);
+                clearTimeout(_self.st);
+                _self.st = setTimeout(function () {
+                    _self.resetTrack();
+                }, 1000);
+            }
+        },
+
+        show: function () {
+            $(document).scrollTop(0);
+            setTimeout(function () {
+                $('#kittySurprise').removeClass('hidden').hide().fadeIn();
+            }, 500);
+        }
+    }
+
+    Eegg.init();
+</script>
+<div class="kitty_surprise hidden" id="kittySurprise">
+    <img src="/img/kitty.jpg" />
+</div>
 </body>
 </html>
