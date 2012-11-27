@@ -73,8 +73,12 @@
         show: function () {
             $(document).scrollTop(0);
             setTimeout(function () {
-                $('#kittySurprise').removeClass('hidden').hide().fadeIn();
-            }, 500);
+                if ($('#kittySurprise').hasClass('hidden')) {
+                    $('#kittySurprise').removeClass('hidden').hide().fadeIn();
+                }else {
+                    $('#kittySurprise').fadeOut().addClass('hidden');
+                }
+            }, 300);
         }
     }
 
