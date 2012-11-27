@@ -37,6 +37,7 @@ body {background-color:#fff;}
 .h_sub_title {float:left;height:90px;overflow:hidden;font:400 14px/110px "\5FAE\8F6F\96C5\9ED1",Arial;color:#888;}
 
 .main {clear:both;margin:10px auto 0;width:980px;}
+.main a:hover {text-decoration:underline;}
 
 /* home */
 .hc_post_list_item {padding-bottom:10px;line-height:23px;border-bottom:1px dotted #ccc;margin:10px 0px;}
@@ -59,7 +60,7 @@ body {background-color:#fff;}
 .post_cont p {margin-top:15px;margin-bottom:15px;}
 .post_cont a:hover {text-decoration:underline}
 
-.cate_item {padding-bottom:10px;}
+.cate_item {padding-bottom:10px;font-size:14px;}
 
 .post_cont ul {margin-left:10px;padding-left:10px;list-style:square;}
 .post_cont ol {margin-left:10px;padding-left:10px;list-style:decimal;}
