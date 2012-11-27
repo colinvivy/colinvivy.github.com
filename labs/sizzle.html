@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>DEMO</title>
+<style type="text/css" media="screen">
+* {margin:0;padding:0;list-style:none;}
+body {padding:10px;font:normal 14px/25px tahoma;}
+.tab_hd {zoom:1;overflow:hidden;height:25px;line-height:25px;border-bottom:1px solid #ddd;}
+.tab_hd ul {zoom:1;overflow:hidden;list-style:none;}
+.tab_hd li {float:left;margin-right:10px;padding:0px 15px 0 10px;border:1px solid #ddd;border-bottom:none;}
+li:before {content:'•';color:#999;margin-right:8px;}
+.tab_bd {clear:both;zoom:1;overflow:hidden;margin-top:15px;line-height:23px;}
+.tab_bd .tab_bd_item {border:1px solid #ddd;padding:10px 15px;margin-right:15px;float:left;}
+.tab_bd .tab_bd_item_inner {border:1px solid #ddd;padding:5px 10px;}
+</style>
+</head>
+<body>
+
+<div class="wrap" id="wrap">
+    <div class="tab_hd" id="tabHd">
+        <ul>
+            <li><a href="#" >Alex</a></li>
+            <li><a href="#"  class="on">Bit</a></li>
+            <li><a href="#" >Colin</a></li>
+        </ul>
+    </div>
+    <div class="tab_bd" id="tabBd">
+        <ul class="tab_bd_item">
+            <li>list item information 1.1 </li>
+            <li>visit <a href="http://icolin.org" >icolin.org</a></li>
+            <li>visit link wrapped with span <span class=""><a href="#" >links </a></span></li>
+            <li>
+                <strong>list item with children 1.4</strong>
+                <ul class="tab_bd_item_inner">
+                    <li>list item information 1.4.1 </li>
+                    <li>list item information 1.4.2 </li>
+                    <li>visit <a href="http://icolin.org" >icolin.org</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="tab_bd_item">
+            <li>list item information 2.1 </li>
+            <li>visit <a href="http://icolin.org" >icolin.org</a></li>
+            <li>list item information 2.2 </li>
+            <li>
+                <strong>list item with children 2.3</strong>
+                <ul class="tab_bd_item_inner">
+                    <li>list item information 2.3.1 </li>
+                    <li>list item information 2.3.2 </li>
+                    <li>visit <a href="http://icolin.org" >icolin.org</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="tab_bd_item">
+            <li>list item information 3.1 </li>
+            <li>
+                <label> <input type="radio" name="rd" id="rd1" value="" checked="checked"/> radio1</label>
+                <label for="rd2"><input type="radio" id="rd2" name="rd" value="" /> radio2</label>
+            </li>
+            <li>
+                <strong>children</strong>
+                <ul class="tab_bd_item_inner">
+                    <li>list item information 3.2</li>
+                    <li>
+                        <label> <input type="checkbox" id="cb1" name="cb" value="" /> option1</label>
+                        <label for="cb2"><input type="checkbox" id="cb2" name="cb" value="" checked="checked"/> option2</label>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript" src="sizzle.js"></script>
+<script type="text/javascript">
+    var sisi = function (expr, isExpand) {
+        if (navigator.userAgent.indexOf('MSIE') > -1 && !isExpand) {
+            return ;
+        }
+        if (!expr) {
+            return false ;
+        }
+        var type = isExpand ? 'group': 'groupCollapsed';
+        console[type](expr);
+            console.time(expr);
+            console.log('SizzleResult: ', $.find(expr)) ;
+        console.groupEnd();
+            console.timeEnd(expr);
+    }
+
+    sisi('ul li a', 0);
+    sisi('ul li a.on', 0);
+    sisi('div#tabHd ul li:first + li' , 0);
+    sisi('div#tabHd ul li:first-child + li' ,0);
+
+    //relative
+    sisi('div + div li ~ li > a', 0);
+    // sisi('li ~ li  a:first', 1);
+
+    sisi('li a:first-child', 0);
+    sisi('li a:first', 0);
+
+    //name
+    sisi('div input[name=rd]', 0);
+    //attr
+    sisi('li a[href!=qq]', 0);
+    //child
+    sisi('ul:first-child ', 0);
+    //pos
+    sisi('ul:first li > a', 0);
+    //PSEUDO
+    // sisi('input:checked', 1);
+    sisi('input:not(:checked)', 0);
+    sisi('li:contains("3.1")', 0);
+
+</script>
+</body>
+</html>

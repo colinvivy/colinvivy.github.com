@@ -7,7 +7,6 @@ category: Mac
 
 [Google]: http://www.google.com 'Google'
 [linkQQ]: http://www.qq.com 'QQ web'
-[img-saber]: /img/saber.png 'saber yeah'
 
 #### 小标题1
 段落如何缩进呢,真是伤脑筋呢
@@ -20,4 +19,3 @@ Use the `printf()` function.
     var name = 'alex';
     var pss = '****';
 
-![Avatar for saber ][img-saber]
