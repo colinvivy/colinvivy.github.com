@@ -11,11 +11,15 @@
 <link rel="alternate" type="application/atom+xml" href="{{ page.feed }}" title="RSS feed" />
 {% endif %}
 <link rel="stylesheet" href="/css/common.css" type="text/css" />
+<link rel="stylesheet" href="/css/prettify.css" type="text/css" />
+<script type="text/javascript" src="/js/jq.js"></script>
+<script type="text/javascript" src="/js/prettify.js"></script>
+
 </head>
-<body id="{{ page.pagesName }}">
+<body id="{{ page.pagesName }}" onload="prettyPrint()">
 
 <div class="header">
-    <h1 class=""><a href="/" target="_self">ColinVivy in Github </a></h1>
+    <h1 class=""><a href="/" target="_self">Colin in Github </a></h1>
 </div>
 
 {% include nav.md %}

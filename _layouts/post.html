@@ -8,3 +8,10 @@ pagesName: posts
     <h3 class="pc_title">{{ page.title }}</h3>
     {{ content }}
 </div>
+
+<script type="text/javascript">
+    $(function () {
+        $('p>img').parent().css('overflowX', 'auto');
+        $('pre').addClass("prettyprint");
+    });
+</script>
