@@ -23,7 +23,7 @@ pagesName: home
     </div>
 
     <div class="hc_past">
-        <a href="javascript:void(0)">Older Posts &raquo;</a>
+        <a href="past.html">Older Posts &raquo;</a>
     </div>
 </div>
 
