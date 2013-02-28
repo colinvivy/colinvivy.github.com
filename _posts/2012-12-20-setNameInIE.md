@@ -7,6 +7,7 @@ excerpt: 在IE中给动态创建的元素设置name属性。。。
 ---
 
 在看源码分析查错的过程中，看到如下一段代码：
+
     if ($isBrowser('ie')) {
         var ifrm = document.createElement('<iframe name="hidIframe"  />');
     } else {
