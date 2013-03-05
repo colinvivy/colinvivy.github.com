@@ -6,7 +6,7 @@
         <li class="gap">/</a>
         <li><a href="/php.html">PHP</a></a>
         <li class="gap">/</a>
-        <li><a href="/design.html">Design</a></a>
+        <li><a href="/other.html">Other</a></a>
         <li class="gap">/</a>
         <li><a href="/about.html">About</a></a>
     </ul>
