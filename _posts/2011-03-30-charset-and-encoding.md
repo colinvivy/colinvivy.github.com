@@ -73,17 +73,17 @@ UTF-8（8-bit Unicode Transformation Format）是一种针对Unicode的可变长
     console.log(parseInt('10110110', 2).toString(16)); //输出 b6
 
     console.log(encodeURI(z).replace(/%/gi, '  ')); //输出 e9 9b b6
-    HTML和Javascript中使用Unicode
 
-    HTML和Javascript都是支持Unicode字符集的，所以你可以在
-    HTML中直接使用Unicode码来表示字符，符号实体就是这样的
-    应用。比如我们用">"或者">"来表示">"，前一种方式叫做符号实体，后一种方式叫做实体编号。
+###HTML和Javascript中使用Unicode
+
+HTML和Javascript都是支持Unicode字符集的，所以你可以在HTML中直接使用Unicode码来表示字符，符号实体就是这样的应用。比如我们用">"或者">"来表示">"，前一种方式叫做符号实体，后一种方式叫做实体编号。
 
     // 说明：零的unicode为38646， 38646 == ox96F6 == 1001011011110110
-
-    // 以下HTML语言在浏览器中会输出两个“零”
+    // 以下HTML语言在浏览器中会输出两个 零
     <strong>&#38646;</strong>
     <strong>&#x96f6;</strong>
+    // use unicode character in CSS
+    .test {color:\25c6 ;}
 
     var z = '零' ;
     // 在javascript也可以直接是用unicode码来表示字符
@@ -100,8 +100,8 @@ UTF-8（8-bit Unicode Transformation Format）是一种针对Unicode的可变长
 
 ###参考：
 
-# http://en.wikipedia.org/wiki/Charset
-# http://en.wikipedia.org/wiki/Character
-# http://en.wikipedia.org/wiki/Unicode
-# http://en.wikipedia.org/wiki/Utf-8
-# http://stauren.net/log/fpev3c89q.html
+- http://en.wikipedia.org/wiki/Charset
+- http://en.wikipedia.org/wiki/Character
+- http://en.wikipedia.org/wiki/Unicode
+- http://en.wikipedia.org/wiki/Utf-8
+- http://stauren.net/log/fpev3c89q.html

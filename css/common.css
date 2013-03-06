@@ -55,6 +55,7 @@ body {background-color:#fff;}
 
 /* post */
 .post_cont {font-size:14px;}
+.post_cont  h3 {margin:15px 0px;}
 .pc_title {font:700 20px/25px "\5FAE\8F6F\96C5\9ED1",Arial;margin:25px 0px;color:#555;}
 .post_cont h4 {font:700 14px/40px "\5FAE\8F6F\96C5\9ED1",Arial,Simsun;}
 .post_cont p {margin-top:15px;margin-bottom:15px;}
