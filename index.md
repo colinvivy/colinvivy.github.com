@@ -8,7 +8,7 @@ pagesName: home
 <div class="home_cont yyy">
     <div class="hc_post_list">
 
-        {% for post in site.posts limit:10 %}
+        {% for post in site.posts limit:20 %}
         <div class="hc_post_list_item">
             <p>{{ post.date | date_to_string }}</p>
             <div class="hc_post_list_item_hd">
